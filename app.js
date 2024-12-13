@@ -20,7 +20,6 @@ app.get('/', (req, res) => {
 app.use('/auth', authRoutes);
 app.use('/kost', kostRoutes);
 
-// Start server and connect to the database
 async function startServer() {
   try {
     await sequelize.authenticate();
